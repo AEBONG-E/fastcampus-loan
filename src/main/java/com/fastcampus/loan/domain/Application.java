@@ -39,7 +39,7 @@ public class Application extends BaseEntity {
     @Column(columnDefinition = "decimal(5,4) DEFAULT NULL COMMENT '취급수수료'")
     private BigDecimal fee;
 
-    @Column(columnDefinition = "datetime DEFAULT NULL '만기일자'")
+    @Column(columnDefinition = "datetime DEFAULT NULL COMMENT '만기일자'")
     private LocalDateTime maturity;
 
     @Column(columnDefinition = "decimal(15,2) DEFAULT NULL COMMENT '대출 신청 금액'")
